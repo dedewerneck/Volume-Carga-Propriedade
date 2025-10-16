@@ -1,0 +1,737 @@
+import React from "react";
+import styled from "styled-components";
+
+const StyledImageLogo = styled.img`
+  width: 110px;
+  height: 30.75px;
+  left: 34px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledAmaralmercatusspan = styled.span`
+  color: white;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledVector03 = styled.div`
+  width: 5px;
+  height: 10px;
+  left: 16px;
+  top: 7px;
+  position: absolute;
+  outline: 2px white solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector05 = styled.div`
+  width: 6px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  position: absolute;
+  outline: 2px white solid;
+  outline-offset: -1px;
+`;
+
+const StyledExportaospan = styled.span`
+  color: #04AF9E;
+  font-size: 32px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 48px;
+  word-wrap: break-word;
+`;
+
+const StyledInciospan = styled.span`
+  color: #747474;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 30px;
+  word-wrap: break-word;
+`;
+
+const StyledParmetrosspan = styled.span`
+  color: #747474;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 30px;
+  word-wrap: break-word;
+`;
+
+const StyledResumospan = styled.span`
+  color: #04AF9E;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 30px;
+  word-wrap: break-word;
+`;
+
+const StyledResumodaexportaospan = styled.span`
+  color: #1E2939;
+  font-size: 24px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 36px;
+  word-wrap: break-word;
+`;
+
+const StyledVerifiquetodososparmetrosantesdeexecutaraspan = styled.span`
+  color: rgba(31, 41, 55, 0.60);
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector06 = styled.div`
+  width: 17.91px;
+  height: 19.96px;
+  left: 3.04px;
+  top: 2.02px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector07 = styled.div`
+  width: 6px;
+  height: 6px;
+  left: 9px;
+  top: 9px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledParmetrosfinaisspan = styled.span`
+  color: #212121;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledTipodeexportaospan = styled.span`
+  color: rgba(33, 33, 33, 0.50);
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const StyledVolumecargapropriedadespan = styled.span`
+  color: #212121;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledLocaldeentregaspan = styled.span`
+  color: rgba(33, 33, 33, 0.50);
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const Styled1086postoccpralvinopolisspan = styled.span`
+  color: #212121;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledDatadeinciospan = styled.span`
+  color: rgba(33, 33, 33, 0.50);
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const Styled16102025span = styled.span`
+  color: #212121;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledDatafinalspan = styled.span`
+  color: rgba(33, 33, 33, 0.50);
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 18px;
+  word-wrap: break-word;
+`;
+
+const Styled17102025span = styled.span`
+  color: #212121;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector09 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px white solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector10 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px white solid;
+  outline-offset: -1px;
+`;
+
+const StyledExportardadosspan = styled.span`
+  color: white;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledParagraph = styled.div`
+  width: 119.30px;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledParagraph01 = styled.div`
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+`;
+
+const StyledParagraph02 = styled.div`
+  width: 47.29px;
+  height: 30px;
+  position: relative;
+`;
+
+const StyledParagraph03 = styled.div`
+  width: 99.45px;
+  height: 30px;
+  position: relative;
+`;
+
+const StyledParagraph04 = styled.div`
+  width: 72.50px;
+  height: 30px;
+  position: relative;
+`;
+
+const StyledParagraph05 = styled.div`
+  align-self: stretch;
+  height: 36px;
+  position: relative;
+`;
+
+const StyledParagraph06 = styled.div`
+  align-self: stretch;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledParagraph07 = styled.div`
+  width: 127.59px;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledParagraph08 = styled.div`
+  width: 270.40px;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledParagraph09 = styled.div`
+  width: 270.40px;
+  flex: 1 1 0;
+  position: relative;
+`;
+
+const StyledParagraph10 = styled.div`
+  width: 270.40px;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledParagraph11 = styled.div`
+  width: 270.40px;
+  flex: 1 1 0;
+  position: relative;
+`;
+
+const StyledParagraph12 = styled.div`
+  width: 270.40px;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledParagraph13 = styled.div`
+  width: 270.40px;
+  flex: 1 1 0;
+  position: relative;
+`;
+
+const StyledParagraph14 = styled.div`
+  width: 270.40px;
+  height: 18px;
+  position: relative;
+`;
+
+const StyledParagraph15 = styled.div`
+  width: 270.40px;
+  flex: 1 1 0;
+  position: relative;
+`;
+
+const StyledParagraph16 = styled.div`
+  width: 93.14px;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledIcon = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon01 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon02 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon03 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledContainer03 = styled.div`
+  align-self: stretch;
+  height: 128px;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+`;
+
+const StyledContainer04 = styled.div`
+  width: 387.74px;
+  height: 50.80px;
+  left: 32px;
+  top: 0px;
+  position: absolute;
+  border-bottom: 0.80px #CACACA solid;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer05 = styled.div`
+  width: 387.74px;
+  height: 50.80px;
+  padding-right: 0.01px;
+  left: 419.74px;
+  top: 0px;
+  position: absolute;
+  border-bottom: 0.80px #CACACA solid;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer06 = styled.div`
+  width: 387.74px;
+  height: 50.80px;
+  padding-right: 0.01px;
+  left: 807.48px;
+  top: 0px;
+  position: absolute;
+  border-bottom: 0.80px #04AF9E solid;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer07 = styled.div`
+  width: 1163.20px;
+  height: 69px;
+  left: 32px;
+  top: 20px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  display: inline-flex;
+`;
+
+const StyledContainer12 = styled.div`
+  width: 270.40px;
+  height: 47px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer13 = styled.div`
+  width: 270.40px;
+  height: 47px;
+  left: 286.40px;
+  top: 0px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer14 = styled.div`
+  width: 270.40px;
+  height: 47px;
+  left: 572.80px;
+  top: 0px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledContainer15 = styled.div`
+  width: 270.40px;
+  height: 47px;
+  left: 859.20px;
+  top: 0px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: inline-flex;
+`;
+
+const StyledButton = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 0px;
+  top: 3.38px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer02 = styled.div`
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer10 = styled.div`
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer16 = styled.div`
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledTabs = styled.div`
+  align-self: stretch;
+  height: 50.80px;
+  position: relative;
+`;
+
+const StyledContainer11 = styled.div`
+  align-self: stretch;
+  height: 47px;
+  position: relative;
+`;
+
+const StyledContainer = styled.div`
+  width: 144px;
+  height: 30.75px;
+  position: relative;
+`;
+
+const StyledContainer01 = styled.div`
+  width: 153.30px;
+  height: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+`;
+
+const StyledContainer09 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  display: inline-flex;
+`;
+
+const StyledButton01 = styled.button`
+  width: 159.14px;
+  height: 46px;
+  padding-left: 16px;
+  left: 1036.06px;
+  top: 245.60px;
+  position: absolute;
+  background: #04AF9E;
+  border-radius: 4px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+`;
+
+const StyledNavBar = styled.div`
+  align-self: stretch;
+  height: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: #04AF9E;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer08 = styled.div`
+  width: 1163.20px;
+  height: 116.60px;
+  padding-top: 16.80px;
+  padding-bottom: 0.80px;
+  padding-left: 16.80px;
+  padding-right: 16.80px;
+  left: 32px;
+  top: 109px;
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  display: inline-flex;
+`;
+
+const StyledResumoStep = styled.div`
+  align-self: stretch;
+  height: 311.60px;
+  position: relative;
+`;
+
+const StyledApp = styled.div`
+  align-self: stretch;
+  height: 729.60px;
+  background: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  display: flex;
+`;
+
+const StyledExportaoeImportao = styled.div`
+  width: 1227px;
+  height: 794px;
+  background: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+export const ExportaOEImportaO = () => {
+  return (
+    <StyledExportaoeImportao>
+      <StyledNavBar>
+        <StyledContainer>
+          <StyledButton>
+            <StyledIcon />
+          </StyledButton>
+          <StyledImageLogo  src="https://placehold.co/110x31"/>
+        </StyledContainer>
+        <StyledContainer01>
+          <StyledParagraph>
+            <StyledAmaralMercatus>Amaral Mercatus</StyledAmaralMercatus>
+          </StyledParagraph>
+          <StyledContainer02>
+            <StyledIcon01>
+              <StyledVector03 />
+              <StyledVector05 />
+            </StyledIcon01>
+          </StyledContainer02>
+        </StyledContainer01>
+      </StyledNavBar>
+      <StyledApp>
+        <StyledContainer03>
+          <StyledParagraph01>
+            <StyledExportao>Exportação</StyledExportao>
+          </StyledParagraph01>
+        </StyledContainer03>
+        <StyledTabs>
+          <StyledContainer04>
+            <StyledParagraph02>
+              <StyledIncio>Início</StyledIncio>
+            </StyledParagraph02>
+          </StyledContainer04>
+          <StyledContainer05>
+            <StyledParagraph03>
+              <StyledParmetros>Parâmetros</StyledParmetros>
+            </StyledParagraph03>
+          </StyledContainer05>
+          <StyledContainer06>
+            <StyledParagraph04>
+              <StyledResumo>Resumo</StyledResumo>
+            </StyledParagraph04>
+          </StyledContainer06>
+        </StyledTabs>
+        <StyledResumoStep>
+          <StyledContainer07>
+            <StyledParagraph05>
+              <StyledResumodaExportao>Resumo da Exportação</StyledResumodaExportao>
+            </StyledParagraph05>
+            <StyledParagraph06>
+              <StyledVerifiquetodososparmetrosantesdeexecutara>Verifique todos os parâmetros antes de executar a exportação</StyledVerifiquetodososparmetrosantesdeexecutara>
+            </StyledParagraph06>
+          </StyledContainer07>
+          <StyledContainer08>
+            <StyledContainer09>
+              <StyledContainer10>
+                <StyledIcon02>
+                  <StyledVector06 />
+                  <StyledVector07 />
+                </StyledIcon02>
+              </StyledContainer10>
+              <StyledParagraph07>
+                <StyledParmetrosFinais>Parâmetros Finais</StyledParmetrosFinais>
+              </StyledParagraph07>
+            </StyledContainer09>
+            <StyledContainer11>
+              <StyledContainer12>
+                <StyledParagraph08>
+                  <StyledTipodeexportao>Tipo de exportação</StyledTipodeexportao>
+                </StyledParagraph08>
+                <StyledParagraph09>
+                  <StyledVolumeCargaPropriedade>Volume Carga Propriedade</StyledVolumeCargaPropriedade>
+                </StyledParagraph09>
+              </StyledContainer12>
+              <StyledContainer13>
+                <StyledParagraph10>
+                  <StyledLocaldeEntrega>Local de Entrega</StyledLocaldeEntrega>
+                </StyledParagraph10>
+                <StyledParagraph11>
+                  <Styled1086POSTOCCPRALVINOPOLIS>1086 - POSTO CCPR ALVINOPOLIS</Styled1086POSTOCCPRALVINOPOLIS>
+                </StyledParagraph11>
+              </StyledContainer13>
+              <StyledContainer14>
+                <StyledParagraph12>
+                  <StyledDatadeincio>Data de início</StyledDatadeincio>
+                </StyledParagraph12>
+                <StyledParagraph13>
+                  <Styled16102025>16/10/2025</Styled16102025>
+                </StyledParagraph13>
+              </StyledContainer14>
+              <StyledContainer15>
+                <StyledParagraph14>
+                  <StyledDatafinal>Data final</StyledDatafinal>
+                </StyledParagraph14>
+                <StyledParagraph15>
+                  <Styled17102025>17/10/2025</Styled17102025>
+                </StyledParagraph15>
+              </StyledContainer15>
+            </StyledContainer11>
+          </StyledContainer08>
+          <StyledButton01>
+            <StyledContainer16>
+              <StyledIcon03>
+                <StyledVector09 />
+                <StyledVector10 />
+              </StyledIcon03>
+            </StyledContainer16>
+            <StyledParagraph16>
+              <StyledExportardados>Exportar dados</StyledExportardados>
+            </StyledParagraph16>
+          </StyledButton01>
+        </StyledResumoStep>
+      </StyledApp>
+    </StyledExportaoeImportao>
+  );
+};
