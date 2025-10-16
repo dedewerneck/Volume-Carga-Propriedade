@@ -1,0 +1,386 @@
+import React from "react";
+import styled from "styled-components";
+
+const StyledImageLogo = styled.img`
+  width: 110px;
+  height: 30.75px;
+  left: 34px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledAmaralmercatusspan = styled.span`
+  color: white;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledVector03 = styled.div`
+  width: 5px;
+  height: 10px;
+  left: 16px;
+  top: 7px;
+  position: absolute;
+  outline: 2px white solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector05 = styled.div`
+  width: 6px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  position: absolute;
+  outline: 2px white solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector06 = styled.div`
+  width: 41.67px;
+  height: 41.67px;
+  left: 4.17px;
+  top: 4.17px;
+  position: absolute;
+  outline: 4.17px #018670 solid;
+  outline-offset: -2.08px;
+`;
+
+const StyledVector07 = styled.div`
+  width: 12.50px;
+  height: 8.33px;
+  left: 18.75px;
+  top: 20.83px;
+  position: absolute;
+  outline: 4.17px #018670 solid;
+  outline-offset: -2.08px;
+`;
+
+const StyledExportaorealizadaspan = styled.span`
+  color: black;
+  font-size: 24px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 36px;
+  word-wrap: break-word;
+`;
+
+const StyledSuaexportaofoiprocessadacomsucessospan = styled.span`
+  color: #747474;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledVector08 = styled.div`
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector09 = styled.div`
+  width: 5px;
+  height: 5px;
+  left: 3px;
+  top: 3px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector10 = styled.div`
+  width: 4px;
+  height: 7px;
+  left: 12px;
+  top: 7px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVerresultadodeexportaospan = styled.span`
+  color: #04AF9E;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledRealizarnovaexportaospan = styled.span`
+  color: white;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledParagraph = styled.div`
+  width: 119.30px;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledParagraph01 = styled.div`
+  width: 223.40px;
+  flex: 1 1 0;
+  position: relative;
+`;
+
+const StyledParagraph02 = styled.div`
+  width: 308.88px;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledParagraph03 = styled.div`
+  width: 176.40px;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledParagraph04 = styled.div`
+  width: 156.16px;
+  height: 21px;
+  position: relative;
+`;
+
+const StyledIcon = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon01 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon02 = styled.div`
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon03 = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon04 = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledContainer05 = styled.div`
+  width: 384.40px;
+  height: 78px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+  display: flex;
+`;
+
+const StyledButton = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 0px;
+  top: 3.38px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer02 = styled.div`
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton01 = styled.button`
+  width: 248px;
+  height: 46px;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #04AF9E solid;
+  outline-offset: -0.80px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+`;
+
+const StyledButton02 = styled.button`
+  width: 248px;
+  height: 46px;
+  padding-right: 0.01px;
+  background: #04AF9E;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+`;
+
+const StyledContainer04 = styled.div`
+  width: 384.40px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+`;
+
+const StyledContainer = styled.div`
+  width: 144px;
+  height: 30.75px;
+  position: relative;
+`;
+
+const StyledContainer01 = styled.div`
+  width: 153.30px;
+  height: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+`;
+
+const StyledContainer06 = styled.div`
+  width: 248px;
+  height: 110px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  display: flex;
+`;
+
+const StyledNavBar = styled.div`
+  width: 1242.40px;
+  height: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #04AF9E;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer03 = styled.div`
+  width: 384.40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: inline-flex;
+`;
+
+const StyledExportacaoRealizadaScreen = styled.div`
+  padding: 20px;
+  left: 408px;
+  top: 205px;
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledExportaoeImportao = styled.div`
+  width: 1242px;
+  height: 730px;
+  position: relative;
+  background: white;
+`;
+
+export const ExportaOEImportaO = () => {
+  return (
+    <StyledExportaoeImportao>
+      <StyledNavBar>
+        <StyledContainer>
+          <StyledButton>
+            <StyledIcon />
+          </StyledButton>
+          <StyledImageLogo  src="https://placehold.co/110x31"/>
+        </StyledContainer>
+        <StyledContainer01>
+          <StyledParagraph>
+            <StyledAmaralMercatus>Amaral Mercatus</StyledAmaralMercatus>
+          </StyledParagraph>
+          <StyledContainer02>
+            <StyledIcon01>
+              <StyledVector03 />
+              <StyledVector05 />
+            </StyledIcon01>
+          </StyledContainer02>
+        </StyledContainer01>
+      </StyledNavBar>
+      <StyledExportacaoRealizadaScreen>
+        <StyledContainer03>
+          <StyledContainer04>
+            <StyledIcon02>
+              <StyledVector06 />
+              <StyledVector07 />
+            </StyledIcon02>
+            <StyledContainer05>
+              <StyledParagraph01>
+                <StyledExportaoRealizada>Exportação Realizada</StyledExportaoRealizada>
+              </StyledParagraph01>
+              <StyledParagraph02>
+                <StyledSuaexportaofoiprocessadacomsucesso>Sua exportação foi processada com sucesso</StyledSuaexportaofoiprocessadacomsucesso>
+              </StyledParagraph02>
+            </StyledContainer05>
+          </StyledContainer04>
+          <StyledContainer06>
+            <StyledButton01>
+              <StyledIcon03>
+                <StyledVector08 />
+                <StyledVector09 />
+                <StyledVector10 />
+              </StyledIcon03>
+              <StyledParagraph03>
+                <StyledVerResultadodeExportao>Ver Resultado de Exportação</StyledVerResultadodeExportao>
+              </StyledParagraph03>
+            </StyledButton01>
+            <StyledButton02>
+              <StyledIcon04 />
+              <StyledParagraph04>
+                <StyledRealizarNovaExportao>Realizar Nova Exportação</StyledRealizarNovaExportao>
+              </StyledParagraph04>
+            </StyledButton02>
+          </StyledContainer06>
+        </StyledContainer03>
+      </StyledExportacaoRealizadaScreen>
+    </StyledExportaoeImportao>
+  );
+};
