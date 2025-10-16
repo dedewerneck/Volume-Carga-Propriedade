@@ -1,0 +1,113 @@
+<div style="width: 1227px; height: 794px; background: white; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+  <div style="align-self: stretch; height: 64px; padding-left: 16px; padding-right: 16px; background: #04AF9E; justify-content: space-between; align-items: center; display: inline-flex">
+    <div style="width: 144px; height: 30.75px; position: relative">
+      <div style="width: 24px; height: 24px; left: 0px; top: 3.38px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+        <div style="width: 24px; height: 24px; position: relative; overflow: hidden"></div>
+      </div>
+      <img style="width: 110px; height: 30.75px; left: 34px; top: 0px; position: absolute" src="https://placehold.co/110x31" />
+    </div>
+    <div style="width: 153.30px; height: 24px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+      <div style="width: 119.30px; height: 24px; position: relative">
+        <div style="left: 0px; top: -2.20px; position: absolute; color: white; font-size: 16px; font-family: Arial; font-weight: 400; line-height: 24px; word-wrap: break-word">Amaral Mercatus</div>
+      </div>
+      <div style="width: 24px; height: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="align-self: stretch; height: 24px; position: relative; overflow: hidden">
+          <div style="width: 5px; height: 10px; left: 16px; top: 7px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
+          <div style="width: 6px; height: 18px; left: 3px; top: 3px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="align-self: stretch; height: 729.60px; background: white; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
+    <div style="align-self: stretch; height: 128px; padding-top: 40px; padding-left: 32px; padding-right: 32px; background: #F5F5F5; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10); flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
+      <div style="align-self: stretch; height: 48px; position: relative">
+        <div style="left: 0px; top: -2.60px; position: absolute; color: #04AF9E; font-size: 32px; font-family: Arial; font-weight: 400; line-height: 48px; word-wrap: break-word">Exportação</div>
+      </div>
+    </div>
+    <div style="align-self: stretch; height: 50.80px; position: relative">
+      <div style="width: 387.74px; height: 50.80px; left: 32px; top: 0px; position: absolute; border-bottom: 0.80px #CACACA solid; justify-content: center; align-items: center; display: inline-flex">
+        <div style="width: 47.29px; height: 30px; position: relative">
+          <div style="left: 0px; top: -2.40px; position: absolute; text-align: center; color: #747474; font-size: 20px; font-family: Arial; font-weight: 400; line-height: 30px; word-wrap: break-word">Início</div>
+        </div>
+      </div>
+      <div style="width: 387.74px; height: 50.80px; padding-right: 0.01px; left: 419.74px; top: 0px; position: absolute; border-bottom: 0.80px #CACACA solid; justify-content: center; align-items: center; display: inline-flex">
+        <div style="width: 99.45px; height: 30px; position: relative">
+          <div style="left: -2px; top: -2.40px; position: absolute; text-align: center; color: #747474; font-size: 20px; font-family: Arial; font-weight: 400; line-height: 30px; word-wrap: break-word">Parâmetros</div>
+        </div>
+      </div>
+      <div style="width: 387.74px; height: 50.80px; padding-right: 0.01px; left: 807.48px; top: 0px; position: absolute; border-bottom: 0.80px #04AF9E solid; justify-content: center; align-items: center; display: inline-flex">
+        <div style="width: 72.50px; height: 30px; position: relative">
+          <div style="left: -3px; top: -2.40px; position: absolute; text-align: center; color: #04AF9E; font-size: 20px; font-family: Arial; font-weight: 700; line-height: 30px; word-wrap: break-word">Resumo</div>
+        </div>
+      </div>
+    </div>
+    <div style="align-self: stretch; height: 311.60px; position: relative">
+      <div style="width: 1163.20px; height: 69px; left: 32px; top: 20px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+        <div style="align-self: stretch; height: 36px; position: relative">
+          <div style="left: 0px; top: -2.40px; position: absolute; color: #1E2939; font-size: 24px; font-family: Arial; font-weight: 400; line-height: 36px; word-wrap: break-word">Resumo da Exportação</div>
+        </div>
+        <div style="align-self: stretch; height: 21px; position: relative">
+          <div style="left: 0px; top: -1.20px; position: absolute; color: rgba(31, 41, 55, 0.60); font-size: 14px; font-family: Arial; font-weight: 400; line-height: 21px; word-wrap: break-word">Verifique todos os parâmetros antes de executar a exportação</div>
+        </div>
+      </div>
+      <div style="width: 1163.20px; height: 116.60px; padding-top: 16.80px; padding-bottom: 0.80px; padding-left: 16.80px; padding-right: 16.80px; left: 32px; top: 109px; position: absolute; background: white; border-radius: 4px; outline: 0.80px #CACACA solid; outline-offset: -0.80px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+        <div style="align-self: stretch; height: 24px; justify-content: flex-start; align-items: center; gap: 7px; display: inline-flex">
+          <div style="width: 24px; height: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+            <div style="align-self: stretch; height: 24px; position: relative; overflow: hidden">
+              <div style="width: 17.91px; height: 19.96px; left: 3.04px; top: 2.02px; position: absolute; outline: 2px #04AF9E solid; outline-offset: -1px"></div>
+              <div style="width: 6px; height: 6px; left: 9px; top: 9px; position: absolute; outline: 2px #04AF9E solid; outline-offset: -1px"></div>
+            </div>
+          </div>
+          <div style="width: 127.59px; height: 24px; position: relative">
+            <div style="left: 0px; top: -2.20px; position: absolute; color: #212121; font-size: 16px; font-family: Arial; font-weight: 400; line-height: 24px; word-wrap: break-word">Parâmetros Finais</div>
+          </div>
+        </div>
+        <div style="align-self: stretch; height: 47px; position: relative">
+          <div style="width: 270.40px; height: 47px; left: 0px; top: 0px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+            <div style="width: 270.40px; height: 18px; position: relative">
+              <div style="left: 0px; top: -1.20px; position: absolute; color: rgba(33, 33, 33, 0.50); font-size: 12px; font-family: Arial; font-weight: 400; line-height: 18px; word-wrap: break-word">Tipo de exportação</div>
+            </div>
+            <div style="width: 270.40px; flex: 1 1 0; position: relative">
+              <div style="left: 0px; top: -1.20px; position: absolute; color: #212121; font-size: 14px; font-family: Arial; font-weight: 400; line-height: 21px; word-wrap: break-word">Volume Carga Propriedade</div>
+            </div>
+          </div>
+          <div style="width: 270.40px; height: 47px; left: 286.40px; top: 0px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+            <div style="width: 270.40px; height: 18px; position: relative">
+              <div style="left: 0px; top: -1.20px; position: absolute; color: rgba(33, 33, 33, 0.50); font-size: 12px; font-family: Arial; font-weight: 400; line-height: 18px; word-wrap: break-word">Local de Entrega</div>
+            </div>
+            <div style="width: 270.40px; flex: 1 1 0; position: relative">
+              <div style="left: 0px; top: -1.20px; position: absolute; color: #212121; font-size: 14px; font-family: Arial; font-weight: 400; line-height: 21px; word-wrap: break-word">1086 - POSTO CCPR ALVINOPOLIS</div>
+            </div>
+          </div>
+          <div style="width: 270.40px; height: 47px; left: 572.80px; top: 0px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+            <div style="width: 270.40px; height: 18px; position: relative">
+              <div style="left: 0px; top: -1.20px; position: absolute; color: rgba(33, 33, 33, 0.50); font-size: 12px; font-family: Arial; font-weight: 400; line-height: 18px; word-wrap: break-word">Data de início</div>
+            </div>
+            <div style="width: 270.40px; flex: 1 1 0; position: relative">
+              <div style="left: 0px; top: -1.20px; position: absolute; color: #212121; font-size: 14px; font-family: Arial; font-weight: 400; line-height: 21px; word-wrap: break-word">16/10/2025</div>
+            </div>
+          </div>
+          <div style="width: 270.40px; height: 47px; left: 859.20px; top: 0px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+            <div style="width: 270.40px; height: 18px; position: relative">
+              <div style="left: 0px; top: -1.20px; position: absolute; color: rgba(33, 33, 33, 0.50); font-size: 12px; font-family: Arial; font-weight: 400; line-height: 18px; word-wrap: break-word">Data final</div>
+            </div>
+            <div style="width: 270.40px; flex: 1 1 0; position: relative">
+              <div style="left: 0px; top: -1.20px; position: absolute; color: #212121; font-size: 14px; font-family: Arial; font-weight: 400; line-height: 21px; word-wrap: break-word">17/10/2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="width: 159.14px; height: 46px; padding-left: 16px; left: 1036.06px; top: 245.60px; position: absolute; background: #04AF9E; border-radius: 4px; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
+        <div style="width: 24px; height: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+          <div style="align-self: stretch; height: 24px; position: relative; overflow: hidden">
+            <div style="width: 18px; height: 6px; left: 3px; top: 15px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
+            <div style="width: 10px; height: 5px; left: 7px; top: 10px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
+          </div>
+        </div>
+        <div style="width: 93.14px; height: 21px; position: relative">
+          <div style="left: 0px; top: -1.20px; position: absolute; color: white; font-size: 14px; font-family: Arial; font-weight: 400; line-height: 21px; word-wrap: break-word">Exportar dados</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
