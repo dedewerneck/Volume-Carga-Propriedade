@@ -1,0 +1,2507 @@
+import React from "react";
+import styled from "styled-components";
+
+const StyledImageLogo = styled.img`
+  width: 110px;
+  height: 30.75px;
+  left: 34px;
+  top: 0px;
+  position: absolute;
+`;
+
+const StyledAmaralmercatusspan = styled.span`
+  color: white;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledVector03 = styled.div`
+  width: 5px;
+  height: 10px;
+  left: 16px;
+  top: 7px;
+  position: absolute;
+  outline: 2px white solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector05 = styled.div`
+  width: 6px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  position: absolute;
+  outline: 2px white solid;
+  outline-offset: -1px;
+`;
+
+const StyledResultadosspan = styled.span`
+  color: #04AF9E;
+  font-size: 32px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 48px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaospan = styled.span`
+  color: #04AF9E;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledImportaospan = styled.span`
+  color: #747474;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledStatusspan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledDescriospan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledDataspan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledAesspan = styled.span`
+  color: black;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledProcessandospan = styled.span`
+  color: white;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 16px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaodevolumelocal002span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled150320241432span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector07 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector08 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledFalhouspan = styled.span`
+  color: #F44336;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 16px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaodevolumelocal00201span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled15032024143201span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector10 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector11 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledSucessospan = styled.span`
+  color: #016630;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 16px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaodevolumelocal00202span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled15032024143202span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector13 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector14 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledSucesso01span = styled.span`
+  color: #016630;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 16px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaodevolumelocal00203span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled15032024143203span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector16 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector17 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledSucesso02span = styled.span`
+  color: #016630;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 16px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaodevolumelocal00204span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled15032024143204span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector19 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector20 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledSucesso03span = styled.span`
+  color: #016630;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 16px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaodevolumelocal00205span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled15032024143205span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector22 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector23 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledSucesso04span = styled.span`
+  color: #016630;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 16px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaodevolumelocal00206span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled15032024143206span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector25 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector26 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledSucesso05span = styled.span`
+  color: #016630;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 16px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaodevolumelocal00207span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled15032024143207span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector28 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector29 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledSucesso06span = styled.span`
+  color: #016630;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 16px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaodevolumelocal00208span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled15032024143208span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector31 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector32 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledSucesso07span = styled.span`
+  color: #016630;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: 700;
+  line-height: 16px;
+  word-wrap: break-word;
+`;
+
+const StyledExportaodevolumelocal00209span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const Styled15032024143209span = styled.span`
+  color: black;
+  font-size: 14px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+`;
+
+const StyledVector34 = styled.div`
+  width: 18px;
+  height: 6px;
+  left: 3px;
+  top: 15px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledVector35 = styled.div`
+  width: 10px;
+  height: 5px;
+  left: 7px;
+  top: 10px;
+  position: absolute;
+  outline: 2px #04AF9E solid;
+  outline-offset: -1px;
+`;
+
+const StyledItensporpginaspan = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const Styled10span = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledVector36 = styled.div`
+  width: 11.57px;
+  height: 5.79px;
+  left: 5.79px;
+  top: 8.68px;
+  position: absolute;
+  outline: 1.93px black solid;
+  outline-offset: -0.96px;
+`;
+
+const StyledPgina1de1span = styled.span`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+`;
+
+const StyledVector37 = styled.div`
+  width: 6.67px;
+  height: 13.33px;
+  left: 8px;
+  top: 9.33px;
+  position: absolute;
+  outline: 2.67px black solid;
+  outline-offset: -1.33px;
+`;
+
+const StyledVector38 = styled.div`
+  width: 6.67px;
+  height: 13.33px;
+  left: 17.33px;
+  top: 9.33px;
+  position: absolute;
+  outline: 2.67px black solid;
+  outline-offset: -1.33px;
+`;
+
+const StyledVector39 = styled.div`
+  width: 8px;
+  height: 16px;
+  left: 12px;
+  top: 8px;
+  position: absolute;
+  outline: 2.67px black solid;
+  outline-offset: -1.33px;
+`;
+
+const StyledVector40 = styled.div`
+  width: 8px;
+  height: 16px;
+  left: 12px;
+  top: 8px;
+  position: absolute;
+  outline: 2.67px black solid;
+  outline-offset: -1.33px;
+`;
+
+const StyledVector41 = styled.div`
+  width: 6.67px;
+  height: 13.33px;
+  left: 8px;
+  top: 9.33px;
+  position: absolute;
+  outline: 2.67px black solid;
+  outline-offset: -1.33px;
+`;
+
+const StyledVector42 = styled.div`
+  width: 6.67px;
+  height: 13.33px;
+  left: 17.33px;
+  top: 9.33px;
+  position: absolute;
+  outline: 2.67px black solid;
+  outline-offset: -1.33px;
+`;
+
+const StyledParagraph = styled.div`
+  width: 119.30px;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledParagraph01 = styled.div`
+  align-self: stretch;
+  height: 48px;
+  position: relative;
+`;
+
+const StyledParagraph02 = styled.div`
+  width: 78.25px;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledParagraph03 = styled.div`
+  width: 80.86px;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledParagraph04 = styled.div`
+  width: 42.81px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph05 = styled.div`
+  width: 68.11px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph06 = styled.div`
+  width: 32.92px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph07 = styled.div`
+  width: 42.25px;
+  height: 24px;
+  left: 1004.15px;
+  top: 8.80px;
+  position: absolute;
+  overflow: hidden;
+`;
+
+const StyledParagraph08 = styled.div`
+  align-self: stretch;
+  height: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph09 = styled.div`
+  width: 208.82px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph10 = styled.div`
+  width: 108.35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph11 = styled.div`
+  align-self: stretch;
+  height: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph12 = styled.div`
+  width: 208.82px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph13 = styled.div`
+  width: 108.35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph14 = styled.div`
+  align-self: stretch;
+  height: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph15 = styled.div`
+  width: 208.82px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph16 = styled.div`
+  width: 108.35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph17 = styled.div`
+  align-self: stretch;
+  height: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph18 = styled.div`
+  width: 208.82px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph19 = styled.div`
+  width: 108.35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph20 = styled.div`
+  align-self: stretch;
+  height: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph21 = styled.div`
+  width: 208.82px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph22 = styled.div`
+  width: 108.35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph23 = styled.div`
+  align-self: stretch;
+  height: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph24 = styled.div`
+  width: 208.82px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph25 = styled.div`
+  width: 108.35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph26 = styled.div`
+  align-self: stretch;
+  height: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph27 = styled.div`
+  width: 208.82px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph28 = styled.div`
+  width: 108.35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph29 = styled.div`
+  align-self: stretch;
+  height: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph30 = styled.div`
+  width: 208.82px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph31 = styled.div`
+  width: 108.35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph32 = styled.div`
+  align-self: stretch;
+  height: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph33 = styled.div`
+  width: 208.82px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph34 = styled.div`
+  width: 108.35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph35 = styled.div`
+  align-self: stretch;
+  height: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledParagraph36 = styled.div`
+  width: 208.82px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph37 = styled.div`
+  width: 108.35px;
+  height: 21px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledParagraph38 = styled.div`
+  width: 118.51px;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledParagraph39 = styled.div`
+  width: 17.25px;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledParagraph40 = styled.div`
+  width: 95.25px;
+  height: 24px;
+  position: relative;
+`;
+
+const StyledIcon = styled.div`
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon01 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon02 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon03 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon04 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon05 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon06 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon07 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon08 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon09 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon10 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon11 = styled.div`
+  align-self: stretch;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon12 = styled.div`
+  width: 23.15px;
+  height: 23.15px;
+  position: relative;
+  opacity: 0.54;
+  overflow: hidden;
+`;
+
+const StyledIcon13 = styled.div`
+  align-self: stretch;
+  height: 32px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon14 = styled.div`
+  align-self: stretch;
+  height: 32px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon15 = styled.div`
+  align-self: stretch;
+  height: 32px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledIcon16 = styled.div`
+  align-self: stretch;
+  height: 32px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledContainer03 = styled.div`
+  width: 1227.20px;
+  height: 128px;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton01 = styled.button`
+  width: 581.60px;
+  height: 44.80px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  border-bottom: 0.80px #04AF9E solid;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledButton02 = styled.button`
+  width: 581.60px;
+  height: 44.80px;
+  padding-right: 0.01px;
+  left: 581.60px;
+  top: 0px;
+  position: absolute;
+  border-bottom: 0.80px #CACACA solid;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer08 = styled.div`
+  width: 232.31px;
+  height: 40px;
+  padding-left: 16px;
+  left: 0.80px;
+  top: 0.80px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer09 = styled.div`
+  width: 464.64px;
+  height: 40px;
+  padding-left: 16px;
+  left: 233.11px;
+  top: 0.80px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer10 = styled.div`
+  width: 290.40px;
+  height: 40px;
+  padding-left: 16px;
+  left: 697.75px;
+  top: 0.80px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer13 = styled.div`
+  width: 109.11px;
+  height: 24px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: rgba(254, 188, 47, 0.80);
+  border-radius: 9999px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer14 = styled.div`
+  width: 464.64px;
+  height: 52px;
+  padding-left: 16px;
+  left: 233.11px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer15 = styled.div`
+  width: 290.40px;
+  height: 52px;
+  padding-left: 16px;
+  left: 697.75px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer18 = styled.div`
+  width: 69.56px;
+  height: 24px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: rgba(244, 67, 54, 0.15);
+  border-radius: 9999px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer19 = styled.div`
+  width: 464.64px;
+  height: 52px;
+  padding-left: 16px;
+  left: 233.11px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer20 = styled.div`
+  width: 290.40px;
+  height: 52px;
+  padding-left: 16px;
+  left: 697.75px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer23 = styled.div`
+  width: 74.78px;
+  height: 24px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #DCFCE7;
+  border-radius: 9999px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer24 = styled.div`
+  width: 464.64px;
+  height: 52px;
+  padding-left: 16px;
+  left: 233.11px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer25 = styled.div`
+  width: 290.40px;
+  height: 52px;
+  padding-left: 16px;
+  left: 697.75px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer28 = styled.div`
+  width: 74.78px;
+  height: 24px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #DCFCE7;
+  border-radius: 9999px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer29 = styled.div`
+  width: 464.64px;
+  height: 52px;
+  padding-left: 16px;
+  left: 233.11px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer30 = styled.div`
+  width: 290.40px;
+  height: 52px;
+  padding-left: 16px;
+  left: 697.75px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer33 = styled.div`
+  width: 74.78px;
+  height: 24px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #DCFCE7;
+  border-radius: 9999px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer34 = styled.div`
+  width: 464.64px;
+  height: 52px;
+  padding-left: 16px;
+  left: 233.11px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer35 = styled.div`
+  width: 290.40px;
+  height: 52px;
+  padding-left: 16px;
+  left: 697.75px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer38 = styled.div`
+  width: 74.78px;
+  height: 24px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #DCFCE7;
+  border-radius: 9999px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer39 = styled.div`
+  width: 464.64px;
+  height: 52px;
+  padding-left: 16px;
+  left: 233.11px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer40 = styled.div`
+  width: 290.40px;
+  height: 52px;
+  padding-left: 16px;
+  left: 697.75px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer43 = styled.div`
+  width: 74.78px;
+  height: 24px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #DCFCE7;
+  border-radius: 9999px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer44 = styled.div`
+  width: 464.64px;
+  height: 52px;
+  padding-left: 16px;
+  left: 233.11px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer45 = styled.div`
+  width: 290.40px;
+  height: 52px;
+  padding-left: 16px;
+  left: 697.75px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer48 = styled.div`
+  width: 74.78px;
+  height: 24px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #DCFCE7;
+  border-radius: 9999px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer49 = styled.div`
+  width: 464.64px;
+  height: 52px;
+  padding-left: 16px;
+  left: 233.11px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer50 = styled.div`
+  width: 290.40px;
+  height: 52px;
+  padding-left: 16px;
+  left: 697.75px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer53 = styled.div`
+  width: 74.78px;
+  height: 24px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #DCFCE7;
+  border-radius: 9999px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer54 = styled.div`
+  width: 464.64px;
+  height: 52px;
+  padding-left: 16px;
+  left: 233.11px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer55 = styled.div`
+  width: 290.40px;
+  height: 52px;
+  padding-left: 16px;
+  left: 697.75px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer58 = styled.div`
+  width: 74.78px;
+  height: 24px;
+  padding-top: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #DCFCE7;
+  border-radius: 9999px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer59 = styled.div`
+  width: 464.64px;
+  height: 52px;
+  padding-left: 16px;
+  left: 233.11px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer60 = styled.div`
+  width: 290.40px;
+  height: 52px;
+  padding-left: 16px;
+  left: 697.75px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledButton = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 0px;
+  top: 3.38px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer02 = styled.div`
+  width: 24px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton03 = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 1063.26px;
+  top: 14px;
+  position: absolute;
+  opacity: 0.78;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton04 = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 1063.26px;
+  top: 14px;
+  position: absolute;
+  opacity: 0.78;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton05 = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 1063.26px;
+  top: 14px;
+  position: absolute;
+  opacity: 0.78;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton06 = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 1063.26px;
+  top: 14px;
+  position: absolute;
+  opacity: 0.78;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton07 = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 1063.26px;
+  top: 14px;
+  position: absolute;
+  opacity: 0.78;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton08 = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 1063.26px;
+  top: 14px;
+  position: absolute;
+  opacity: 0.78;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton09 = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 1063.26px;
+  top: 14px;
+  position: absolute;
+  opacity: 0.78;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton10 = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 1063.26px;
+  top: 14px;
+  position: absolute;
+  opacity: 0.78;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton11 = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 1063.26px;
+  top: 14px;
+  position: absolute;
+  opacity: 0.78;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton12 = styled.button`
+  width: 24px;
+  height: 24px;
+  left: 1063.26px;
+  top: 14px;
+  position: absolute;
+  opacity: 0.78;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton13 = styled.button`
+  width: 98px;
+  height: 52px;
+  border-radius: 4px;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  display: flex;
+`;
+
+const StyledButton14 = styled.button`
+  width: 32px;
+  height: 32px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  opacity: 0.12;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton15 = styled.button`
+  width: 32px;
+  height: 32px;
+  left: 51px;
+  top: 0px;
+  position: absolute;
+  opacity: 0.12;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton16 = styled.button`
+  width: 32px;
+  height: 32px;
+  left: 102px;
+  top: 0px;
+  position: absolute;
+  opacity: 0.12;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledButton17 = styled.button`
+  width: 32px;
+  height: 32px;
+  left: 153px;
+  top: 0px;
+  position: absolute;
+  opacity: 0.12;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+const StyledContainer04 = styled.div`
+  width: 1163.20px;
+  height: 44.80px;
+  left: 32px;
+  top: 168px;
+  position: absolute;
+`;
+
+const StyledContainer07 = styled.div`
+  width: 1163.20px;
+  height: 41.60px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  outline: 0.80px #CACACA solid;
+  outline-offset: -0.80px;
+`;
+
+const StyledContainer12 = styled.div`
+  width: 232.31px;
+  height: 52px;
+  padding-left: 16px;
+  left: 0.80px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer17 = styled.div`
+  width: 232.31px;
+  height: 52px;
+  padding-left: 16px;
+  left: 0.80px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer22 = styled.div`
+  width: 232.31px;
+  height: 52px;
+  padding-left: 16px;
+  left: 0.80px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer27 = styled.div`
+  width: 232.31px;
+  height: 52px;
+  padding-left: 16px;
+  left: 0.80px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer32 = styled.div`
+  width: 232.31px;
+  height: 52px;
+  padding-left: 16px;
+  left: 0.80px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer37 = styled.div`
+  width: 232.31px;
+  height: 52px;
+  padding-left: 16px;
+  left: 0.80px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer42 = styled.div`
+  width: 232.31px;
+  height: 52px;
+  padding-left: 16px;
+  left: 0.80px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer47 = styled.div`
+  width: 232.31px;
+  height: 52px;
+  padding-left: 16px;
+  left: 0.80px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer52 = styled.div`
+  width: 232.31px;
+  height: 52px;
+  padding-left: 16px;
+  left: 0.80px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer57 = styled.div`
+  width: 232.31px;
+  height: 52px;
+  padding-left: 16px;
+  left: 0.80px;
+  top: 0px;
+  position: absolute;
+  border-right: 0.80px #CACACA solid;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer = styled.div`
+  width: 144px;
+  height: 30.75px;
+  position: relative;
+`;
+
+const StyledContainer01 = styled.div`
+  width: 153.30px;
+  height: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+`;
+
+const StyledContainer62 = styled.div`
+  width: 254.51px;
+  height: 52px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 38px;
+  display: flex;
+`;
+
+const StyledContainer64 = styled.div`
+  flex: 1 1 0;
+  height: 32px;
+  position: relative;
+`;
+
+const StyledContainer11 = styled.div`
+  width: 1163.20px;
+  height: 52.80px;
+  left: 0px;
+  top: 41.60px;
+  position: absolute;
+  background: white;
+  border-left: 0.80px #CACACA solid;
+  border-right: 0.80px #CACACA solid;
+  border-bottom: 0.80px #CACACA solid;
+`;
+
+const StyledContainer16 = styled.div`
+  width: 1163.20px;
+  height: 52.80px;
+  left: 0px;
+  top: 94.40px;
+  position: absolute;
+  background: white;
+  border-left: 0.80px #CACACA solid;
+  border-right: 0.80px #CACACA solid;
+  border-bottom: 0.80px #CACACA solid;
+`;
+
+const StyledContainer21 = styled.div`
+  width: 1163.20px;
+  height: 52.80px;
+  left: 0px;
+  top: 147.20px;
+  position: absolute;
+  background: white;
+  border-left: 0.80px #CACACA solid;
+  border-right: 0.80px #CACACA solid;
+  border-bottom: 0.80px #CACACA solid;
+`;
+
+const StyledContainer26 = styled.div`
+  width: 1163.20px;
+  height: 52.80px;
+  left: 0px;
+  top: 200px;
+  position: absolute;
+  background: white;
+  border-left: 0.80px #CACACA solid;
+  border-right: 0.80px #CACACA solid;
+  border-bottom: 0.80px #CACACA solid;
+`;
+
+const StyledContainer31 = styled.div`
+  width: 1163.20px;
+  height: 52.80px;
+  left: 0px;
+  top: 252.80px;
+  position: absolute;
+  background: white;
+  border-left: 0.80px #CACACA solid;
+  border-right: 0.80px #CACACA solid;
+  border-bottom: 0.80px #CACACA solid;
+`;
+
+const StyledContainer36 = styled.div`
+  width: 1163.20px;
+  height: 52.80px;
+  left: 0px;
+  top: 305.60px;
+  position: absolute;
+  background: white;
+  border-left: 0.80px #CACACA solid;
+  border-right: 0.80px #CACACA solid;
+  border-bottom: 0.80px #CACACA solid;
+`;
+
+const StyledContainer41 = styled.div`
+  width: 1163.20px;
+  height: 52.80px;
+  left: 0px;
+  top: 358.40px;
+  position: absolute;
+  background: white;
+  border-left: 0.80px #CACACA solid;
+  border-right: 0.80px #CACACA solid;
+  border-bottom: 0.80px #CACACA solid;
+`;
+
+const StyledContainer46 = styled.div`
+  width: 1163.20px;
+  height: 52.80px;
+  left: 0px;
+  top: 411.20px;
+  position: absolute;
+  background: white;
+  border-left: 0.80px #CACACA solid;
+  border-right: 0.80px #CACACA solid;
+  border-bottom: 0.80px #CACACA solid;
+`;
+
+const StyledContainer51 = styled.div`
+  width: 1163.20px;
+  height: 52.80px;
+  left: 0px;
+  top: 464px;
+  position: absolute;
+  background: white;
+  border-left: 0.80px #CACACA solid;
+  border-right: 0.80px #CACACA solid;
+  border-bottom: 0.80px #CACACA solid;
+`;
+
+const StyledContainer56 = styled.div`
+  width: 1163.20px;
+  height: 52.80px;
+  left: 0px;
+  top: 516.80px;
+  position: absolute;
+  background: white;
+  border-left: 0.80px #CACACA solid;
+  border-right: 0.80px #CACACA solid;
+  border-bottom: 0.80px #CACACA solid;
+`;
+
+const StyledNavBar = styled.div`
+  align-self: stretch;
+  height: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: #04AF9E;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+`;
+
+const StyledContainer63 = styled.div`
+  width: 312.25px;
+  height: 32px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  display: flex;
+`;
+
+const StyledContainer06 = styled.div`
+  align-self: stretch;
+  height: 569.60px;
+  position: relative;
+  overflow: hidden;
+`;
+
+const StyledContainer61 = styled.div`
+  align-self: stretch;
+  height: 52px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  display: inline-flex;
+`;
+
+const StyledContainer05 = styled.div`
+  width: 1227.20px;
+  height: 661.60px;
+  padding-left: 32px;
+  padding-right: 32px;
+  left: 0px;
+  top: 252.80px;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  display: inline-flex;
+`;
+
+const StyledResultadosScreen = styled.div`
+  align-self: stretch;
+  height: 914.40px;
+  position: relative;
+  background: white;
+`;
+
+const StyledExportaoeImportao = styled.div`
+  width: 1227px;
+  height: 978px;
+  background: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+`;
+
+export const ExportaOEImportaO = () => {
+  return (
+    <StyledExportaoeImportao>
+      <StyledNavBar>
+        <StyledContainer>
+          <StyledButton>
+            <StyledIcon />
+          </StyledButton>
+          <StyledImageLogo  src="https://placehold.co/110x31"/>
+        </StyledContainer>
+        <StyledContainer01>
+          <StyledParagraph>
+            <StyledAmaralMercatus>Amaral Mercatus</StyledAmaralMercatus>
+          </StyledParagraph>
+          <StyledContainer02>
+            <StyledIcon01>
+              <StyledVector03 />
+              <StyledVector05 />
+            </StyledIcon01>
+          </StyledContainer02>
+        </StyledContainer01>
+      </StyledNavBar>
+      <StyledResultadosScreen>
+        <StyledContainer03>
+          <StyledParagraph01>
+            <StyledResultados>Resultados</StyledResultados>
+          </StyledParagraph01>
+        </StyledContainer03>
+        <StyledContainer04>
+          <StyledButton01>
+            <StyledParagraph02>
+              <StyledExportao>Exportação</StyledExportao>
+            </StyledParagraph02>
+          </StyledButton01>
+          <StyledButton02>
+            <StyledParagraph03>
+              <StyledImportao>Importação</StyledImportao>
+            </StyledParagraph03>
+          </StyledButton02>
+        </StyledContainer04>
+        <StyledContainer05>
+          <StyledContainer06>
+            <StyledContainer07>
+              <StyledContainer08>
+                <StyledParagraph04>
+                  <StyledStatus>Status</StyledStatus>
+                </StyledParagraph04>
+              </StyledContainer08>
+              <StyledContainer09>
+                <StyledParagraph05>
+                  <StyledDescrio>Descrição</StyledDescrio>
+                </StyledParagraph05>
+              </StyledContainer09>
+              <StyledContainer10>
+                <StyledParagraph06>
+                  <StyledData>Data</StyledData>
+                </StyledParagraph06>
+              </StyledContainer10>
+              <StyledParagraph07>
+                <StyledAes>Ações</StyledAes>
+              </StyledParagraph07>
+            </StyledContainer07>
+            <StyledContainer11>
+              <StyledContainer12>
+                <StyledContainer13>
+                  <StyledParagraph08>
+                    <StyledPROCESSANDO>PROCESSANDO</StyledPROCESSANDO>
+                  </StyledParagraph08>
+                </StyledContainer13>
+              </StyledContainer12>
+              <StyledContainer14>
+                <StyledParagraph09>
+                  <StyledExportaodevolumeLocal002>Exportação de volume - Local 002</StyledExportaodevolumeLocal002>
+                </StyledParagraph09>
+              </StyledContainer14>
+              <StyledContainer15>
+                <StyledParagraph10>
+                  <Styled150320241432>15/03/2024 14:32</Styled150320241432>
+                </StyledParagraph10>
+              </StyledContainer15>
+              <StyledButton03>
+                <StyledIcon02>
+                  <StyledVector07 />
+                  <StyledVector08 />
+                </StyledIcon02>
+              </StyledButton03>
+            </StyledContainer11>
+            <StyledContainer16>
+              <StyledContainer17>
+                <StyledContainer18>
+                  <StyledParagraph11>
+                    <StyledFALHOU>FALHOU</StyledFALHOU>
+                  </StyledParagraph11>
+                </StyledContainer18>
+              </StyledContainer17>
+              <StyledContainer19>
+                <StyledParagraph12>
+                  <StyledExportaodevolumeLocal00201>Exportação de volume - Local 002</StyledExportaodevolumeLocal00201>
+                </StyledParagraph12>
+              </StyledContainer19>
+              <StyledContainer20>
+                <StyledParagraph13>
+                  <Styled15032024143201>15/03/2024 14:32</Styled15032024143201>
+                </StyledParagraph13>
+              </StyledContainer20>
+              <StyledButton04>
+                <StyledIcon03>
+                  <StyledVector10 />
+                  <StyledVector11 />
+                </StyledIcon03>
+              </StyledButton04>
+            </StyledContainer16>
+            <StyledContainer21>
+              <StyledContainer22>
+                <StyledContainer23>
+                  <StyledParagraph14>
+                    <StyledSUCESSO>SUCESSO</StyledSUCESSO>
+                  </StyledParagraph14>
+                </StyledContainer23>
+              </StyledContainer22>
+              <StyledContainer24>
+                <StyledParagraph15>
+                  <StyledExportaodevolumeLocal00202>Exportação de volume - Local 002</StyledExportaodevolumeLocal00202>
+                </StyledParagraph15>
+              </StyledContainer24>
+              <StyledContainer25>
+                <StyledParagraph16>
+                  <Styled15032024143202>15/03/2024 14:32</Styled15032024143202>
+                </StyledParagraph16>
+              </StyledContainer25>
+              <StyledButton05>
+                <StyledIcon04>
+                  <StyledVector13 />
+                  <StyledVector14 />
+                </StyledIcon04>
+              </StyledButton05>
+            </StyledContainer21>
+            <StyledContainer26>
+              <StyledContainer27>
+                <StyledContainer28>
+                  <StyledParagraph17>
+                    <StyledSUCESSO01>SUCESSO</StyledSUCESSO01>
+                  </StyledParagraph17>
+                </StyledContainer28>
+              </StyledContainer27>
+              <StyledContainer29>
+                <StyledParagraph18>
+                  <StyledExportaodevolumeLocal00203>Exportação de volume - Local 002</StyledExportaodevolumeLocal00203>
+                </StyledParagraph18>
+              </StyledContainer29>
+              <StyledContainer30>
+                <StyledParagraph19>
+                  <Styled15032024143203>15/03/2024 14:32</Styled15032024143203>
+                </StyledParagraph19>
+              </StyledContainer30>
+              <StyledButton06>
+                <StyledIcon05>
+                  <StyledVector16 />
+                  <StyledVector17 />
+                </StyledIcon05>
+              </StyledButton06>
+            </StyledContainer26>
+            <StyledContainer31>
+              <StyledContainer32>
+                <StyledContainer33>
+                  <StyledParagraph20>
+                    <StyledSUCESSO02>SUCESSO</StyledSUCESSO02>
+                  </StyledParagraph20>
+                </StyledContainer33>
+              </StyledContainer32>
+              <StyledContainer34>
+                <StyledParagraph21>
+                  <StyledExportaodevolumeLocal00204>Exportação de volume - Local 002</StyledExportaodevolumeLocal00204>
+                </StyledParagraph21>
+              </StyledContainer34>
+              <StyledContainer35>
+                <StyledParagraph22>
+                  <Styled15032024143204>15/03/2024 14:32</Styled15032024143204>
+                </StyledParagraph22>
+              </StyledContainer35>
+              <StyledButton07>
+                <StyledIcon06>
+                  <StyledVector19 />
+                  <StyledVector20 />
+                </StyledIcon06>
+              </StyledButton07>
+            </StyledContainer31>
+            <StyledContainer36>
+              <StyledContainer37>
+                <StyledContainer38>
+                  <StyledParagraph23>
+                    <StyledSUCESSO03>SUCESSO</StyledSUCESSO03>
+                  </StyledParagraph23>
+                </StyledContainer38>
+              </StyledContainer37>
+              <StyledContainer39>
+                <StyledParagraph24>
+                  <StyledExportaodevolumeLocal00205>Exportação de volume - Local 002</StyledExportaodevolumeLocal00205>
+                </StyledParagraph24>
+              </StyledContainer39>
+              <StyledContainer40>
+                <StyledParagraph25>
+                  <Styled15032024143205>15/03/2024 14:32</Styled15032024143205>
+                </StyledParagraph25>
+              </StyledContainer40>
+              <StyledButton08>
+                <StyledIcon07>
+                  <StyledVector22 />
+                  <StyledVector23 />
+                </StyledIcon07>
+              </StyledButton08>
+            </StyledContainer36>
+            <StyledContainer41>
+              <StyledContainer42>
+                <StyledContainer43>
+                  <StyledParagraph26>
+                    <StyledSUCESSO04>SUCESSO</StyledSUCESSO04>
+                  </StyledParagraph26>
+                </StyledContainer43>
+              </StyledContainer42>
+              <StyledContainer44>
+                <StyledParagraph27>
+                  <StyledExportaodevolumeLocal00206>Exportação de volume - Local 002</StyledExportaodevolumeLocal00206>
+                </StyledParagraph27>
+              </StyledContainer44>
+              <StyledContainer45>
+                <StyledParagraph28>
+                  <Styled15032024143206>15/03/2024 14:32</Styled15032024143206>
+                </StyledParagraph28>
+              </StyledContainer45>
+              <StyledButton09>
+                <StyledIcon08>
+                  <StyledVector25 />
+                  <StyledVector26 />
+                </StyledIcon08>
+              </StyledButton09>
+            </StyledContainer41>
+            <StyledContainer46>
+              <StyledContainer47>
+                <StyledContainer48>
+                  <StyledParagraph29>
+                    <StyledSUCESSO05>SUCESSO</StyledSUCESSO05>
+                  </StyledParagraph29>
+                </StyledContainer48>
+              </StyledContainer47>
+              <StyledContainer49>
+                <StyledParagraph30>
+                  <StyledExportaodevolumeLocal00207>Exportação de volume - Local 002</StyledExportaodevolumeLocal00207>
+                </StyledParagraph30>
+              </StyledContainer49>
+              <StyledContainer50>
+                <StyledParagraph31>
+                  <Styled15032024143207>15/03/2024 14:32</Styled15032024143207>
+                </StyledParagraph31>
+              </StyledContainer50>
+              <StyledButton10>
+                <StyledIcon09>
+                  <StyledVector28 />
+                  <StyledVector29 />
+                </StyledIcon09>
+              </StyledButton10>
+            </StyledContainer46>
+            <StyledContainer51>
+              <StyledContainer52>
+                <StyledContainer53>
+                  <StyledParagraph32>
+                    <StyledSUCESSO06>SUCESSO</StyledSUCESSO06>
+                  </StyledParagraph32>
+                </StyledContainer53>
+              </StyledContainer52>
+              <StyledContainer54>
+                <StyledParagraph33>
+                  <StyledExportaodevolumeLocal00208>Exportação de volume - Local 002</StyledExportaodevolumeLocal00208>
+                </StyledParagraph33>
+              </StyledContainer54>
+              <StyledContainer55>
+                <StyledParagraph34>
+                  <Styled15032024143208>15/03/2024 14:32</Styled15032024143208>
+                </StyledParagraph34>
+              </StyledContainer55>
+              <StyledButton11>
+                <StyledIcon10>
+                  <StyledVector31 />
+                  <StyledVector32 />
+                </StyledIcon10>
+              </StyledButton11>
+            </StyledContainer51>
+            <StyledContainer56>
+              <StyledContainer57>
+                <StyledContainer58>
+                  <StyledParagraph35>
+                    <StyledSUCESSO07>SUCESSO</StyledSUCESSO07>
+                  </StyledParagraph35>
+                </StyledContainer58>
+              </StyledContainer57>
+              <StyledContainer59>
+                <StyledParagraph36>
+                  <StyledExportaodevolumeLocal00209>Exportação de volume - Local 002</StyledExportaodevolumeLocal00209>
+                </StyledParagraph36>
+              </StyledContainer59>
+              <StyledContainer60>
+                <StyledParagraph37>
+                  <Styled15032024143209>15/03/2024 14:32</Styled15032024143209>
+                </StyledParagraph37>
+              </StyledContainer60>
+              <StyledButton12>
+                <StyledIcon11>
+                  <StyledVector34 />
+                  <StyledVector35 />
+                </StyledIcon11>
+              </StyledButton12>
+            </StyledContainer56>
+          </StyledContainer06>
+          <StyledContainer61>
+            <StyledContainer62>
+              <StyledParagraph38>
+                <StyledItensporpgina>Itens por página:</StyledItensporpgina>
+              </StyledParagraph38>
+              <StyledButton13>
+                <StyledParagraph39>
+                  <Styled10>10</Styled10>
+                </StyledParagraph39>
+                <StyledIcon12>
+                  <StyledVector36 />
+                </StyledIcon12>
+              </StyledButton13>
+            </StyledContainer62>
+            <StyledContainer63>
+              <StyledParagraph40>
+                <StyledPgina1de1>Página 1 de 1</StyledPgina1de1>
+              </StyledParagraph40>
+              <StyledContainer64>
+                <StyledButton14>
+                  <StyledIcon13>
+                    <StyledVector37 />
+                    <StyledVector38 />
+                  </StyledIcon13>
+                </StyledButton14>
+                <StyledButton15>
+                  <StyledIcon14>
+                    <StyledVector39 />
+                  </StyledIcon14>
+                </StyledButton15>
+                <StyledButton16>
+                  <StyledIcon15>
+                    <StyledVector40 />
+                  </StyledIcon15>
+                </StyledButton16>
+                <StyledButton17>
+                  <StyledIcon16>
+                    <StyledVector41 />
+                    <StyledVector42 />
+                  </StyledIcon16>
+                </StyledButton17>
+              </StyledContainer64>
+            </StyledContainer63>
+          </StyledContainer61>
+        </StyledContainer05>
+      </StyledResultadosScreen>
+    </StyledExportaoeImportao>
+  );
+};
