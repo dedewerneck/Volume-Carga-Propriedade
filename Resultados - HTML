@@ -1,0 +1,57 @@
+<div style="width: 1242px; height: 730px; position: relative; background: white">
+  <div style="width: 1242.40px; height: 64px; padding-left: 16px; padding-right: 16px; left: 0px; top: 0px; position: absolute; background: #04AF9E; justify-content: space-between; align-items: center; display: inline-flex">
+    <div style="width: 144px; height: 30.75px; position: relative">
+      <div style="width: 24px; height: 24px; left: 0px; top: 3.38px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-start; display: inline-flex">
+        <div style="width: 24px; height: 24px; position: relative; overflow: hidden"></div>
+      </div>
+      <img style="width: 110px; height: 30.75px; left: 34px; top: 0px; position: absolute" src="https://placehold.co/110x31" />
+    </div>
+    <div style="width: 153.30px; height: 24px; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+      <div style="width: 119.30px; height: 24px; position: relative">
+        <div style="left: 0px; top: -2.20px; position: absolute; color: white; font-size: 16px; font-family: Arial; font-weight: 400; line-height: 24px; word-wrap: break-word">Amaral Mercatus</div>
+      </div>
+      <div style="width: 24px; height: 24px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+        <div style="align-self: stretch; height: 24px; position: relative; overflow: hidden">
+          <div style="width: 5px; height: 10px; left: 16px; top: 7px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
+          <div style="width: 6px; height: 18px; left: 3px; top: 3px; position: absolute; outline: 2px white solid; outline-offset: -1px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding: 20px; left: 408px; top: 205px; position: absolute; background: white; border-radius: 4px; outline: 0.80px #CACACA solid; outline-offset: -0.80px; justify-content: center; align-items: center; display: inline-flex">
+    <div style="width: 384.40px; flex-direction: column; justify-content: center; align-items: center; gap: 20px; display: inline-flex">
+      <div style="width: 384.40px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 20px; display: flex">
+        <div style="width: 50px; height: 50px; position: relative; overflow: hidden">
+          <div style="width: 41.67px; height: 41.67px; left: 4.17px; top: 4.17px; position: absolute; outline: 4.17px #018670 solid; outline-offset: -2.08px"></div>
+          <div style="width: 12.50px; height: 8.33px; left: 18.75px; top: 20.83px; position: absolute; outline: 4.17px #018670 solid; outline-offset: -2.08px"></div>
+        </div>
+        <div style="width: 384.40px; height: 78px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 18px; display: flex">
+          <div style="width: 223.40px; flex: 1 1 0; position: relative">
+            <div style="left: -5px; top: -2.40px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Arial; font-weight: 400; line-height: 36px; word-wrap: break-word">Exportação Realizada</div>
+          </div>
+          <div style="width: 308.88px; height: 24px; position: relative">
+            <div style="left: -5px; top: -2.20px; position: absolute; text-align: center; color: #747474; font-size: 16px; font-family: Arial; font-weight: 400; line-height: 24px; word-wrap: break-word">Sua exportação foi processada com sucesso</div>
+          </div>
+        </div>
+      </div>
+      <div style="width: 248px; height: 110px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: flex">
+        <div style="width: 248px; height: 46px; background: white; border-radius: 4px; outline: 0.80px #04AF9E solid; outline-offset: -0.80px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+          <div style="width: 24px; height: 24px; position: relative; overflow: hidden">
+            <div style="width: 18px; height: 18px; left: 3px; top: 3px; position: absolute; outline: 2px #04AF9E solid; outline-offset: -1px"></div>
+            <div style="width: 5px; height: 5px; left: 3px; top: 3px; position: absolute; outline: 2px #04AF9E solid; outline-offset: -1px"></div>
+            <div style="width: 4px; height: 7px; left: 12px; top: 7px; position: absolute; outline: 2px #04AF9E solid; outline-offset: -1px"></div>
+          </div>
+          <div style="width: 176.40px; height: 21px; position: relative">
+            <div style="left: 0px; top: -1.20px; position: absolute; color: #04AF9E; font-size: 14px; font-family: Arial; font-weight: 400; line-height: 21px; word-wrap: break-word">Ver Resultado de Exportação</div>
+          </div>
+        </div>
+        <div style="width: 248px; height: 46px; padding-right: 0.01px; background: #04AF9E; border-radius: 4px; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+          <div style="width: 24px; height: 24px; position: relative; overflow: hidden"></div>
+          <div style="width: 156.16px; height: 21px; position: relative">
+            <div style="left: 0px; top: -1.20px; position: absolute; color: white; font-size: 14px; font-family: Arial; font-weight: 400; line-height: 21px; word-wrap: break-word">Realizar Nova Exportação</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
